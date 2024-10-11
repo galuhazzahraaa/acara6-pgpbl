@@ -27,10 +27,6 @@ export class HomePage {
       attribution: 'Map data: &copy; OpenStreetMap contributors, SRTM | Map style: &copy; OpenTopoMap (CC-BY-SA)'
     });
 
-    // const watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
-    //   attribution: '&copy; <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>'
-    // });
-
     const terrain = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
       attribution: 'Map data: &copy; OpenStreetMap contributors'
     });
@@ -58,7 +54,6 @@ export class HomePage {
     const baseMaps = {
       "OpenStreetMap": osm,
       "Satellite": satellite,
-      // "Watercolor": watercolor,
       "Terrain": terrain,
       "Carto Light": cartoLight
     };
